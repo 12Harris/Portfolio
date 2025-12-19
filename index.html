@@ -207,4 +207,20 @@
 </footer>
 
 </body>
+
+<script>
+  const videos = document.getElementsByClassName('vid');
+  
+  for (let i = 0; i < videos.length; i++) {
+    videos[i].addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+ }
+
+</script>
+
 </html>
