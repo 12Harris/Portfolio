@@ -108,6 +108,11 @@ section {
   font-weight: 500;
 }
 
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 .playvideo {
     position: absolute;
     top: 50%;
