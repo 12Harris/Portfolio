@@ -256,6 +256,7 @@
   for (let i = 0; i < playbuttons.length; i++) {
   
 	videos[i].pause();
+	playbuttons[i].style.display = "block";
 	
     playbuttons[i].addEventListener("click", () => {
       videos[i].play();
