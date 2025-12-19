@@ -209,11 +209,12 @@
 
 <script>
   const videos = document.getElementsByClassName('vid');
-  alert('click');
-  
   for (let i = 0; i < videos.length; i++) {
     videos[i].addEventListener("click", () => {
     if (video.paused) {
+		
+	  alert('click');
+  
       video.play();
     } else {
       video.pause();
