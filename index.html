@@ -273,6 +273,11 @@
 			playbuttons[i].style.display = "block";
 		}
 	});
+	
+	videos[i].addEventListener("ended", () => {
+		videos[i].pause();
+		playbuttons[i].style.display = "block";
+  });
  }
 
 </script>
