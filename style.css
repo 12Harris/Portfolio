@@ -113,7 +113,10 @@ section {
   }
 
 .play-btn {
-   position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 60px;
     background: rgba(0,0,0,0.6);
     color: white;
