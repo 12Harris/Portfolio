@@ -18,20 +18,50 @@
   </div>
 </header>
 
+
+<style>
+  .video-wrapper {
+    position: relative;
+    width: 400px;
+  }
+
+  video {
+    width: 100%;
+    display: block;
+  }
+
+  .playvideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+  }
+</style>
+
+
 <section class="projects">
   <h2>Finished Projects</h2>
   
    <!-- PROJECT CARD -->
   <div class="project" id="project1">
-    <video class="vid">
-      <source src="media/project1.mp4" type="video/mp4">
-	  <button class="playvideo"
-		style="position:relative; width:25%; height:25%;">
-		▶ Play
-	</button>
-	  
-    </video>
-	
+  
+	<div class="video-wrapper">
+		<video class="vid">
+		  <source src="media/project1.mp4" type="video/mp4">
+		</video>
+		
+		<button class="playvideo">
+			▶ Play
+		</button>
+	</div>
 
     <div class="project-info" id="project1-info">
       <h3>Pacman 3D</h3>
@@ -258,8 +288,10 @@
     playbuttons[i].addEventListener("click", () => {
     if (videos[i].paused) {
       videos[i].play();
+	  playbuttons[i].style.display = "block";
     } else {
       videos[i].pause();
+	  playbuttons[i].style.display = "none";
     }
   });
  }
