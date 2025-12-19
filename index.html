@@ -257,15 +257,14 @@
 	videos[i].pause();
 	
     playbuttons[i].addEventListener("click", () => {
-    if (videos[i].paused) {
       videos[i].play();
 	  playbuttons[i].style.display = "none";
-	  alert("display:none");
-    } else {
-      videos[i].pause();
-	  playbuttons[i].style.display = "block";
-    }
-  });
+	     
+	});
+	  
+	videos[i].addEventListener("pause" () => {
+		playbuttons[i].style.display = "block";
+	});
  }
 
 </script>
