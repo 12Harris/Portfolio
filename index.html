@@ -254,7 +254,7 @@
     playbuttons[i].addEventListener("click", () => {
       videos[i].play();
 	  
-	  if (typeof activevideo !== 'undefined')
+	  if (typeof activevideo !== 'undefined' && activevideo !== videos[i])
 	  {
 			activevideo.pause();
 			activePlayButton.style.display = "block";
