@@ -261,13 +261,14 @@
     playbuttons[i].addEventListener("click", () => {
       videos[i].play();
 	  playbuttons[i].style.display = "none";
+	alert("lol");
+
 	     
 	});
 	  
 	videos[i].addEventListener("click", () => {
 		if(playbuttons[i].style.display == "none")
 		{
-		alert("lol");
 			videos[i].pause();
 			playbuttons[i].style.display = "block";
 		}
