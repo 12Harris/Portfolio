@@ -263,8 +263,12 @@
 	     
 	});
 	  
-	videos[i].addEventListener("pause", () => {
-		//playbuttons[i].style.display = "block";
+	videos[i].addEventListener("click", () => {
+		if(playbuttons[i].style.display == "none")
+		{
+			videos[i].pause();
+			playbuttons[i].style.display = "block";
+		}
 	});
  }
 
