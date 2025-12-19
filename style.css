@@ -107,6 +107,10 @@ section {
   font-weight: 500;
 }
 
+.video-wrapper {
+    position: relative;
+ }
+
 .play-btn {
     position: absolute;
     top: 50%;
