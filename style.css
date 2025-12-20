@@ -71,19 +71,21 @@ section {
 	width:1600px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	position:absolute;
 	top: 400px;
+	z-index: 1;
 }
 
 .projects {
-	/*position:absolute;*/
+	/*position:absolute;
 	top: 400px;
-	z-index: 1; 
+	z-index: 1;*/
 }
 
 .UnfinishedProjects {
 	/*position:absolute;
-	top: 800px;*/
-	z-index: 1; 
+	top: 800px;
+	z-index: 1;*/
 }
 	
 .project {
