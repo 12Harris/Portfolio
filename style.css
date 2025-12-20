@@ -135,18 +135,36 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Mobile */
-@media (max-width: 480) {
+/* ---------- Mobile (iPhone) ---------- */
+@media (max-width: 480px) {
+
+  .hero {
+    padding: 2.5rem 1.2rem;
+  }
+
+  section {
+    padding: 2rem 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
   .project {
     grid-template-columns: 1fr;
   }
-  
-  .projectlarge{
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+
+  .projectlarge {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
-  
+
+  .vid,
+  .vid.large {
+    width: 100%;
+  }
+
   .playvideo {
-	  display:none;
+    display: none;
   }
 }
