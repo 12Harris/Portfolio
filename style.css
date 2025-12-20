@@ -67,12 +67,15 @@ section {
   margin-bottom: 2rem;
 }
 
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 .projects {
 	position:absolute;
 	top: 400px;
 	z-index: 1; 
-	display: grid;
-	grid-template-columns: 1fr;
 }
 
 .UnfinishedProjects {
