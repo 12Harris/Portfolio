@@ -6,6 +6,8 @@
   --accent: #4da3ff;
 }
 
+
+@media (max-width: 1920px) {
 * {
   box-sizing: border-box;
 }
@@ -133,6 +135,7 @@ footer {
   padding: 2rem;
   color: var(--muted);
   font-size: 0.9rem;
+}
 }
 
 /* ---------- Mobile (iPhone) ---------- */
