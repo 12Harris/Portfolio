@@ -66,6 +66,7 @@ section {
 }
 
 .projects {
+	position:relative;
 	z-index: 5; 
 }
 	
