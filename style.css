@@ -136,7 +136,7 @@ footer {
 }
 
 /* Mobile */
-@media (max-width: 800px) {
+@media (max-width: 480) {
   .project {
     grid-template-columns: 1fr;
   }
