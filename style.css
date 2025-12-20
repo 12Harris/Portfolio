@@ -66,8 +66,8 @@ section {
 }
 
 .projects {
-	position:relative;
-	top: -200;
+	position:absolute;
+	top: 200px;
 	z-index: 5; 
 }
 	
