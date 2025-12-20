@@ -79,8 +79,8 @@ section {
 }
 
 .UnfinishedProjects {
-	position:absolute;
-	top: 800px;
+	/*position:absolute;
+	top: 800px;*/
 	z-index: 1; 
 }
 	
