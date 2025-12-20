@@ -268,20 +268,13 @@ function isIOS() {
   const playbuttons = document.getElementsByClassName("playvideo");
   var activevideo;
   var activePlayButton;
+  
   for (let i = 0; i < playbuttons.length; i++) {
   
 	videos[i].pause();
 	
-	if(!isIOS()) 
-	{
-		alert("desktop detected!");
+	if(!isIOS())
 		playbuttons[i].style.display = "block";
-	}
-	else
-	{
-		alert("iphone detected!");
-		playbuttons[i].style.display = "none";
-	}
 	
     playbuttons[i].addEventListener("click", () => {
       videos[i].play();
@@ -290,7 +283,9 @@ function isIOS() {
 	  if (typeof activevideo !== 'undefined' && activevideo != videos[i])
 	  {
 			activevideo.pause();
-			activePlayButton.style.display = "block";
+			
+			if(!isIOS())
+				activePlayButton.style.display = "block";
 	  }
 	  activevideo = videos[i];
 	  activePlayButton = playbuttons[i];
@@ -303,13 +298,15 @@ function isIOS() {
 		if(playbuttons[i].style.display == "none")
 		{
 			videos[i].pause();
-			playbuttons[i].style.display = "block";
+			if(!isIOS())
+				playbuttons[i].style.display = "block";
 		}
 	});
 	
 	videos[i].addEventListener("ended", () => {
 		videos[i].pause();
-		playbuttons[i].style.display = "block";
+		if(!isIOS())
+			playbuttons[i].style.display = "block";
   });
  }
 
