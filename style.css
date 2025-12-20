@@ -36,6 +36,7 @@ h1, h2, h3 {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 5;
 }
 
 .subtitle {
@@ -64,6 +65,10 @@ section {
   margin-bottom: 2rem;
 }
 
+.projects {
+	z-index: 1; 
+}
+	
 .project {
   display: grid;
   grid-template-columns: 1fr 1fr;
