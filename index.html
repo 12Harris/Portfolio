@@ -274,6 +274,8 @@ function isIOS() {
 	
 	if(!isIos())
 		playbuttons[i].style.display = "block";
+	else
+		playbuttons[i].style.display = "none";
 	
     playbuttons[i].addEventListener("click", () => {
       videos[i].play();
