@@ -74,7 +74,7 @@ section {
 }
 
 .projects {
-	position:absolute;
+	/*position:absolute;*/
 	top: 400px;
 	z-index: 1; 
 }
