@@ -256,6 +256,14 @@
 
 
 <script>
+function isIOS() {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+         (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+}
+
+</script>
+
+<script>
   const videos = document.getElementsByClassName("vid");
   const playbuttons = document.getElementsByClassName("playvideo");
   var activevideo;
@@ -263,7 +271,9 @@
   for (let i = 0; i < playbuttons.length; i++) {
   
 	videos[i].pause();
-	playbuttons[i].style.display = "block";
+	
+	if(!isIos())
+		playbuttons[i].style.display = "block";
 	
     playbuttons[i].addEventListener("click", () => {
       videos[i].play();
