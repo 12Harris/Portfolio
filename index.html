@@ -268,6 +268,7 @@
     playbuttons[i].addEventListener("click", () => {
       videos[i].play();
 	  
+	  //when switching between videos first pause the current active one
 	  if (typeof activevideo !== 'undefined' && activevideo != videos[i])
 	  {
 			activevideo.pause();
