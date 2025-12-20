@@ -6,7 +6,7 @@
   --accent: #4da3ff;
 }
 
-
+/* ---------- Desktop (iPhone) ---------- */
 @media (max-width: 1920px) {
 * {
   box-sizing: border-box;
