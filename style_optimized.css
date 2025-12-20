@@ -1,0 +1,96 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --text: #e6e6e6;
+  --muted: #9aa0a6;
+  --accent: #4da3ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+
+h1, h2, h3 { margin-top: 0; }
+
+.hero {
+  position: fixed;
+  padding: 4rem 2rem;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  background: var(--bg);
+  border-bottom: 5px solid red;
+}
+
+.subtitle { font-size: 1.2rem; color: var(--muted); }
+.tech { margin-top: 0.5rem; color: var(--muted); }
+.links a { margin: 0 0.5rem; }
+
+section { max-width: 1000px; margin: auto; padding: 3rem 2rem; }
+.projects h2, .tools h2, .about h2 { margin-bottom: 2rem; }
+
+.content {
+  width: 1600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  top: 400px;
+  z-index: 1;
+}
+
+.project, .projectlarge {
+  display: grid;
+  gap: 2rem;
+  background: var(--panel);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.project { grid-template-columns: 1fr 1fr; }
+.projectlarge { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+
+.vid { display: block; width: 100%; border-radius: 6px; transition: all 0.3s ease; }
+
+.project-info ul { padding-left: 1.2rem; }
+.project-info li { margin-bottom: 0.4rem; }
+.tech-stack { font-size: 0.9rem; color: var(--muted); }
+.project-links a { margin-right: 1rem; font-weight: 500; }
+
+.video-wrapper { position: relative; display: inline-block; }
+
+.playvideo {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 80px; height: 80px;
+  cursor: pointer;
+}
+
+footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.9rem; }
+
+/* Responsive Mobile */
+@media (max-width: 480px) {
+  .hero { padding: 2.5rem 1.2rem; }
+  section { padding: 2rem 1.2rem; }
+  .subtitle { font-size: 1rem; }
+  .content { width: 100%; grid-template-columns: 1fr; grid-template-rows: auto; }
+  .project { grid-template-columns: 1fr; }
+  .projectlarge { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .vid, .vid.large { width: 100%; }
+}
