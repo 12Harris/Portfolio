@@ -272,10 +272,16 @@ function isIOS() {
   
 	videos[i].pause();
 	
-	if(!isIos())
+	if(!isIos()) 
+	{
+		alert("desktop detected!");
 		playbuttons[i].style.display = "block";
+	}
 	else
+	{
+		alert("iphone detected!");
 		playbuttons[i].style.display = "none";
+	}
 	
     playbuttons[i].addEventListener("click", () => {
       videos[i].play();
