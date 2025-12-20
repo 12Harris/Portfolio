@@ -180,6 +180,10 @@ footer {
   .subtitle {
     font-size: 1rem;
   }
+  
+  .content {
+	grid-template-columns: 1fr;
+  }
 
   .project {
     grid-template-columns: 1fr;
