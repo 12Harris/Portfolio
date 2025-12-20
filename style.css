@@ -68,9 +68,10 @@ section {
 }
 
 .content {
-	width:800px;
+	width:1600px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	top: 400px;
 }
 
 .projects {
