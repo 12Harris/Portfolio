@@ -71,6 +71,8 @@ section {
 	position:absolute;
 	top: 400px;
 	z-index: 1; 
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
 .UnfinishedProjects {
