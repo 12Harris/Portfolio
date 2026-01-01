@@ -188,9 +188,9 @@ footer {
 	grid-template-rows: auto;
   }
 
-  .project {
+  /*.project {
     grid-template-columns: 1fr;
-  }
+  }*/
 
   .projectlarge {
     grid-template-columns: 1fr;
