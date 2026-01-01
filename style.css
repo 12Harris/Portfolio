@@ -181,8 +181,11 @@ footer {
     font-size: 1rem;
   }
   
-  .content {
+  .content h2{
 	top:200px;
+  }
+  
+  .content {
 	width:100%;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
