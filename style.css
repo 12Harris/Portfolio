@@ -182,7 +182,7 @@ footer {
   }
   
   .content {
-	top:200px;
+	top:300px;
 	width:100%;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
