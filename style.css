@@ -182,14 +182,14 @@ footer {
   }
   
   .content {
-	/*top:200px;*/
+	top:200px;
 	width:100%;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
   }
 
   .project {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
   }
 
   .projectlarge {
