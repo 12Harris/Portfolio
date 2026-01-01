@@ -189,7 +189,7 @@ footer {
   }
 
   .project {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
   }
 
   .projectlarge {
