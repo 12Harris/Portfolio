@@ -167,7 +167,7 @@ footer {
 }
 
 /* ---------- Mobile (iPhone) ---------- */
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
 
   .hero {
     padding: 2.5rem 1.2rem;
@@ -181,12 +181,12 @@ footer {
     font-size: 1rem;
   }
   
-  /*.content {
+  .content {
 	top:200px;
 	width:100%;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
-  }*/
+  }
 
   .project {
     grid-template-columns: 1fr;
