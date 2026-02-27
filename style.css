@@ -30,7 +30,8 @@ h1, h2, h3 {
 }
 
 .hero {
-	position: fixed; /* stays in viewport */
+position: sticky;
+  top: 0; /* stays in viewport */
   padding: 4rem 2rem;
   text-align: center;
   top: 0;
@@ -68,11 +69,11 @@ section {
 }
 
 .content {
-	width:1600px;
+	/*width:1600px;*/
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	position:absolute;
-	top: 400px;
+	/*position:absolute;*/
+	/*top: 400px;*/
 	z-index: 1;
 }
 
