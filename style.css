@@ -76,9 +76,11 @@ section {
 	z-index: 1;
 }
 
-/*.projects {
-	padding-top: 220px;
-}*/
+.projects {
+	/*position:absolute;
+	top: 400px;
+	z-index: 1;*/
+}
 
 .UnfinishedProjects {
 	/*position:absolute;
