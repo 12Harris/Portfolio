@@ -72,7 +72,7 @@ section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	position:absolute;
-	top: 400px;
+	top: 800px;
 	z-index: 1;
 }
 
@@ -189,7 +189,7 @@ footer {
   }
 
   .project {
-    grid-template-columns: 2fr;
+    grid-template-columns: fr;
   }
 
   .projectlarge {
