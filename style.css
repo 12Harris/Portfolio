@@ -77,7 +77,6 @@ section {
 }
 
 .projects {
-	position:absolute;
 	padding-top: 220px;
 	z-index: 1;
 }
